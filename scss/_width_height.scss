@@ -1,0 +1,43 @@
+@import './variables';
+
+@mixin generateWidthAndHeight {
+  @for $i from 1 to $widthAndHeightValuesLength {
+    .w-#{$i * 5} {
+      width: #{$i * 5};
+    }
+  }
+
+  @for $i from 1 to $widthAndHeightValuesLength {
+    .h-#{$i * 5} {
+      height: #{$i * 5};
+    }
+  }
+}
+
+@mixin generateWidthAndHeightForMediumScreens {
+  @for $i from 1 to $widthAndHeightValuesLength {
+    .w-md-#{$i * 5} {
+      width: #{$i * 5};
+    }
+  }
+
+  @for $i from 1 to $widthAndHeightValuesLength {
+    .h-md-#{$i * 5} {
+      height: #{$i * 5};
+    }
+  }
+}
+
+@mixin generateWidthAndHeightForLargeScreens {
+  @for $i from 1 to $widthAndHeightValuesLength {
+    .w-lg-#{$i * 5} {
+      width: #{$i * 5};
+    }
+  }
+
+  @for $i from 1 to $widthAndHeightValuesLength {
+    .h-lg-#{$i * 5} {
+      height: #{$i * 5};
+    }
+  }
+}

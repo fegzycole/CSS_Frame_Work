@@ -2,6 +2,7 @@
 @import './padding';
 @import './display';
 @import './flex';
+@import './width_height';
 
 @include generateMargin;
 @include generatePadding;
@@ -11,6 +12,7 @@
 @include generateAlignItems;
 @include generateAlignSelf;
 @include generateOrder;
+@include generateWidthAndHeight;
 
 @media screen and (min-width: 720px) {
   @include generateMarginForMediumScreens;
@@ -21,6 +23,7 @@
   @include generateAlignItemsForMediumScreens;
   @include generateAlignSelfForMediumScreens;
   @include generateOrderForMediumScreens;
+  @include generateWidthAndHeightForMediumScreens;
 }
 
 @media screen and (min-width: 1024px) {
@@ -32,4 +35,5 @@
   @include generateAlignItemsForLargeScreens;
   @include generateAlignSelfForLargeScreens;
   @include generateOrderForLargeScreens;
+  @include generateWidthAndHeightForLargeScreens;
 }
