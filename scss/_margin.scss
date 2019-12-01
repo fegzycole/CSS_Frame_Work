@@ -1,0 +1,181 @@
+@import "./variables";
+
+@mixin generateMargin {
+  @for $i from 1 to $spaceValuesLength {
+    .m-#{$i} {
+      margin: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .m-auto {
+    margin: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mt-#{$i} {
+      margin-top: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mb-#{$i} {
+      margin-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .ml-#{$i} {
+      margin-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mr-#{$i} {
+      margin-right: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mx-#{$i} {
+      margin-right: #{nth($spaceValues, $i)};
+      margin-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .my-#{$i} {
+      margin-top: #{nth($spaceValues, $i)};
+      margin-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@mixin generateMarginForMediumScreens {
+  @for $i from 1 to $spaceValuesLength {
+    .m-md-#{$i} {
+      margin: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .m-md-auto {
+    margin: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mt-md-#{$i} {
+      margin-top: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mb-md-#{$i} {
+      margin-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .ml-md-#{$i} {
+      margin-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mr-md-#{$i} {
+      margin-right: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mx-md-#{$i} {
+      margin-right: #{nth($spaceValues, $i)};
+      margin-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .mx-md-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .my-md-#{$i} {
+      margin-top: #{nth($spaceValues, $i)};
+      margin-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .my-md-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@mixin generateMarginForLargeScreens {
+  @for $i from 1 to $spaceValuesLength {
+    .m-lg-#{$i} {
+      margin: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .m-lg-auto {
+    margin: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mt-lg-#{$i} {
+      margin-top: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mb-lg-#{$i} {
+      margin-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .ml-lg-#{$i} {
+      margin-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mr-lg-#{$i} {
+      margin-right: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .mx-lg-#{$i} {
+      margin-right: #{nth($spaceValues, $i)};
+      margin-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .mx-lg-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .my-lg-#{$i} {
+      margin-top: #{nth($spaceValues, $i)};
+      margin-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .my-lg-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}

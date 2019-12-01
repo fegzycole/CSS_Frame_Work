@@ -1,0 +1,181 @@
+@import "./variables";
+
+@mixin generatePadding {
+  @for $i from 1 to $spaceValuesLength {
+    .p-#{$i} {
+      padding: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .p-auto {
+    padding: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pt-#{$i} {
+      padding-top: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pb-#{$i} {
+      padding-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pl-#{$i} {
+      padding-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pr-#{$i} {
+      padding-right: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .px-#{$i} {
+      padding-right: #{nth($spaceValues, $i)};
+      padding-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .px-auto {
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .py-#{$i} {
+      padding-top: #{nth($spaceValues, $i)};
+      padding-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .py-auto {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+}
+
+@mixin generatePaddingForMediumScreens {
+  @for $i from 1 to $spaceValuesLength {
+    .p-md-#{$i} {
+      padding: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .p-md-auto {
+    padding: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pt-md-#{$i} {
+      padding-top: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pb-md-#{$i} {
+      padding-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pl-md-#{$i} {
+      padding-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pr-md-#{$i} {
+      padding-right: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .px-md-#{$i} {
+      padding-right: #{nth($spaceValues, $i)};
+      padding-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .px-md-auto {
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .py-md-#{$i} {
+      padding-top: #{nth($spaceValues, $i)};
+      padding-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .py-md-auto {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+}
+
+@mixin generatePaddingForLargeScreens {
+  @for $i from 1 to $spaceValuesLength {
+    .p-lg-#{$i} {
+      padding: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .p-lg-auto {
+    padding: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pt-lg-#{$i} {
+      padding-top: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pb-lg-#{$i} {
+      padding-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pl-lg-#{$i} {
+      padding-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .pr-lg-#{$i} {
+      padding-right: #{nth($spaceValues, $i)};
+    }
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .px-lg-#{$i} {
+      padding-right: #{nth($spaceValues, $i)};
+      padding-left: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .px-lg-auto {
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  @for $i from 1 to $spaceValuesLength {
+    .py-lg-#{$i} {
+      padding-top: #{nth($spaceValues, $i)};
+      padding-bottom: #{nth($spaceValues, $i)};
+    }
+  }
+
+  .py-lg-auto {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+}
