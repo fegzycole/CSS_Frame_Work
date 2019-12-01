@@ -1,19 +1,35 @@
 @import './margin';
 @import './padding';
 @import './display';
+@import './flex';
 
 @include generateMargin;
 @include generatePadding;
 @include generateDisplay;
+@include generateFlexDirection;
+@include generateJustifyContentProperties;
+@include generateAlignItems;
+@include generateAlignSelf;
+@include generateOrder;
 
 @media screen and (min-width: 720px) {
   @include generateMarginForMediumScreens;
   @include generatePaddingForMediumScreens;
   @include generateDisplayForMediumScreens;
+  @include generateFlexDirectionForMediumScreens;
+  @include generateJustifyContentPropertiesForMediumScreens;
+  @include generateAlignItemsForMediumScreens;
+  @include generateAlignSelfForMediumScreens;
+  @include generateOrderForMediumScreens;
 }
 
 @media screen and (min-width: 1024px) {
   @include generateMarginForLargeScreens;
   @include generatePaddingForLargeScreens;
   @include generateDisplayForLargeScreens;
+  @include generateFlexDirectionForLargeScreens;
+  @include generateJustifyContentPropertiesForLargeScreens;
+  @include generateAlignItemsForLargeScreens;
+  @include generateAlignSelfForLargeScreens;
+  @include generateOrderForLargeScreens;
 }

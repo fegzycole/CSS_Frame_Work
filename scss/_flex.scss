@@ -1,0 +1,121 @@
+@import './variables';
+
+@mixin generateFlexDirection {
+  @for $i from 1 to $flexDirectionValuesLength {
+    .flex-#{nth($flexDirectionValues, $i)} {
+      flex-direction: #{nth($flexDirectionValues, $i)};
+    }
+  }
+}
+
+@mixin generateFlexDirectionForMediumScreens {
+  @for $i from 1 to $flexDirectionValuesLength {
+    .flex-md-#{nth($flexDirectionValues, $i)} {
+      flex-direction: #{nth($flexDirectionValues, $i)};
+    }
+  }
+}
+
+@mixin generateFlexDirectionForLargeScreens {
+  @for $i from 1 to $flexDirectionValuesLength {
+    .flex-lg-#{nth($flexDirectionValues, $i)} {
+      flex-direction: #{nth($flexDirectionValues, $i)};
+    }
+  }
+}
+
+@mixin generateJustifyContentProperties {
+  @for $i from 1 to $justifyContentValuesLength {
+    .justify-#{nth($justifyContentValues, $i)} {
+      justify-content: #{nth($justifyContentValues, $i)};
+    }
+  }
+}
+
+@mixin generateJustifyContentPropertiesForMediumScreens {
+  @for $i from 1 to $justifyContentValuesLength {
+    .justify-md-#{nth($justifyContentValues, $i)} {
+      justify-content: #{nth($justifyContentValues, $i)};
+    }
+  }
+}
+
+@mixin generateJustifyContentPropertiesForLargeScreens {
+  @for $i from 1 to $justifyContentValuesLength {
+    .justify-lg-#{nth($justifyContentValues, $i)} {
+      justify-content: #{nth($justifyContentValues, $i)};
+    }
+  }
+}
+
+@mixin generateAlignItems {
+  @for $i from 1 to $alignItemsValuesLength {
+    .align-items-#{nth($alignItemsValues, $i)} {
+      align-items: #{nth($alignItemsValues, $i)};
+    }
+  }
+}
+
+@mixin generateAlignItemsForMediumScreens {
+  @for $i from 1 to $alignItemsValuesLength {
+    .align-items-md-#{nth($alignItemsValues, $i)} {
+      align-items: #{nth($alignItemsValues, $i)};
+    }
+  }
+}
+
+@mixin generateAlignItemsForLargeScreens {
+  @for $i from 1 to $alignItemsValuesLength {
+    .align-items-lg-#{nth($alignItemsValues, $i)} {
+      align-items: #{nth($alignItemsValues, $i)};
+    }
+  }
+}
+
+@mixin generateAlignSelf {
+  @for $i from 1 to $alignItemsValuesLength {
+    .align-self-#{nth($alignItemsValues, $i)} {
+      align-items: #{nth($alignItemsValues, $i)};
+    }
+  }
+}
+
+@mixin generateAlignSelfForMediumScreens {
+  @for $i from 1 to $alignItemsValuesLength {
+    .align-self-md-#{nth($alignItemsValues, $i)} {
+      align-items: #{nth($alignItemsValues, $i)};
+    }
+  }
+}
+
+@mixin generateAlignSelfForLargeScreens {
+  @for $i from 1 to $alignItemsValuesLength {
+    .align-self-lg-#{nth($alignItemsValues, $i)} {
+      align-items: #{nth($alignItemsValues, $i)};
+    }
+  }
+}
+
+@mixin generateOrder {
+  @for $i from 1 to $cols {
+    .order-#{$i} {
+      order: #{$i};
+    }
+  }
+}
+
+@mixin generateOrderForMediumScreens {
+  @for $i from 1 to $cols {
+    .order-md-#{$i} {
+      order: #{$i};
+    }
+  }
+}
+
+@mixin generateOrderForLargeScreens {
+  @for $i from 1 to $cols {
+    .order-lg-#{$i} {
+      order: #{$i};
+    }
+  }
+}
