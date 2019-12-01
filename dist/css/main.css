@@ -326,6 +326,24 @@
   padding-bottom: auto;
 }
 
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
 @media screen and (min-width: 720px) {
   .m-md-1 {
     margin: 0.25rem;
@@ -578,6 +596,20 @@
   .py-md-auto {
     padding-top: auto;
     padding-bottom: auto;
+  }
+  .d-md-block {
+    display: block;
+  }
+  .d-md-inline-block {
+    display: inline-block;
+  }
+  .d-md-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d-md-none {
+    display: none;
   }
 }
 
@@ -833,6 +865,20 @@
   .py-lg-auto {
     padding-top: auto;
     padding-bottom: auto;
+  }
+  .d-lg-block {
+    display: block;
+  }
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+  .d-lg-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d-lg-none {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

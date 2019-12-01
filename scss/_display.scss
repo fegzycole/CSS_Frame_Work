@@ -1,1 +1,25 @@
 @import './variables';
+
+@mixin generateDisplay {
+  @for $i from 1 to $displayValuesLength {
+    .d-#{nth($displayValues, $i)} {
+      display: #{nth($displayValues, $i)};
+    }
+  }
+}
+
+@mixin generateDisplayForMediumScreens {
+  @for $i from 1 to $displayValuesLength {
+    .d-md-#{nth($displayValues, $i)} {
+      display: #{nth($displayValues, $i)};
+    }
+  }
+}
+
+@mixin generateDisplayForLargeScreens {
+  @for $i from 1 to $displayValuesLength {
+    .d-lg-#{nth($displayValues, $i)} {
+      display: #{nth($displayValues, $i)};
+    }
+  }
+}

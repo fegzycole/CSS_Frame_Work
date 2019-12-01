@@ -1,15 +1,19 @@
 @import './margin';
 @import './padding';
+@import './display';
 
 @include generateMargin;
 @include generatePadding;
+@include generateDisplay;
 
 @media screen and (min-width: 720px) {
   @include generateMarginForMediumScreens;
   @include generatePaddingForMediumScreens;
+  @include generateDisplayForMediumScreens;
 }
 
 @media screen and (min-width: 1024px) {
   @include generateMarginForLargeScreens;
   @include generatePaddingForLargeScreens;
+  @include generateDisplayForLargeScreens;
 }
