@@ -1,0 +1,43 @@
+@import './variables';
+
+@mixin generateTextProperties {
+  @for $i from 1 to $textPropertiesLength {
+    .text-#{nth($textProperties, $i)} {
+      text-transform: #{nth($textProperties, $i)};
+    }
+  }
+
+  @for $i from 1 to $fontWeightValuesLength {
+    .text-#{nth($font-weights, $i)} {
+      font-weight: #{nth($font-weights, $i)};
+    }
+  }
+}
+
+@mixin generateTextPropertiesForMediumScreens {
+  @for $i from 1 to $textPropertiesLength {
+    .text-md-#{nth($textProperties, $i)} {
+      text-transform: #{nth($textProperties, $i)};
+    }
+  }
+
+  @for $i from 1 to $fontWeightValuesLength {
+    .text-md-#{nth($font-weights, $i)} {
+      font-weight: #{nth($font-weights, $i)};
+    }
+  }
+}
+
+@mixin generateTextPropertiesForLargeScreens {
+  @for $i from 1 to $textPropertiesLength {
+    .text-lg-#{nth($textProperties, $i)} {
+      text-transform: #{nth($textProperties, $i)};
+    }
+  }
+
+  @for $i from 1 to $fontWeightValuesLength {
+    .text-lg-#{nth($font-weights, $i)} {
+      font-weight: #{nth($font-weights, $i)};
+    }
+  }
+}

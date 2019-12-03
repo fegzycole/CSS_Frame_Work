@@ -1,0 +1,61 @@
+@import './variables';
+
+@mixin generateBorderClasses {
+  .border {
+    border: 1px solid #a8a6a6;
+  }
+
+  .border-none {
+    border: none;
+  }
+
+  @for $i from 1 to $borderValuesLength {
+    .border-#{nth($borderValues, $i)} {
+      border-#{nth($borderValues, $i)}: 1px solid #a8a6a6;
+    }
+
+    .border-#{nth($borderValues, $i)}-none {
+      border-#{nth($borderValues, $i)}: none;
+    }
+  }
+}
+
+@mixin generateBorderClassesForMediumScreens {
+  .border-md {
+    border: 1px solid #a8a6a6;
+  }
+
+  .border-md-none {
+    border: none;
+  }
+
+  @for $i from 1 to $borderValuesLength {
+    .border-md-#{nth($borderValues, $i)} {
+      border-#{nth($borderValues, $i)}: 1px solid #a8a6a6;
+    }
+
+    .border-md-#{nth($borderValues, $i)}-none {
+      border-#{nth($borderValues, $i)}: none;
+    }
+  }
+}
+
+@mixin generateBorderClassesForLargeScreens {
+  .border-lg {
+    border: 1px solid #a8a6a6;
+  }
+
+  .border-lg-none {
+    border: none;
+  }
+
+  @for $i from 1 to $borderValuesLength {
+    .border-lg-#{nth($borderValues, $i)} {
+      border-#{nth($borderValues, $i)}: 1px solid #a8a6a6;
+    }
+
+    .border-lg-#{nth($borderValues, $i)}-none {
+      border-#{nth($borderValues, $i)}: none;
+    }
+  }
+}

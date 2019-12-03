@@ -3,6 +3,12 @@
 @import './display';
 @import './flex';
 @import './width_height';
+@import './position';
+@import './colors';
+@import './text';
+@import './grid';
+@import './float';
+@import './border';
 
 @include generateMargin;
 @include generatePadding;
@@ -13,6 +19,12 @@
 @include generateAlignSelf;
 @include generateOrder;
 @include generateWidthAndHeight;
+@include generatePositionClasses;
+@include generateColorClasses;
+@include generateTextProperties;
+@include generateRow;
+@include float;
+@include generateBorderClasses;
 
 @media screen and (min-width: 720px) {
   @include generateMarginForMediumScreens;
@@ -24,6 +36,12 @@
   @include generateAlignSelfForMediumScreens;
   @include generateOrderForMediumScreens;
   @include generateWidthAndHeightForMediumScreens;
+  @include generatePositionClassesForMediumScreens;
+  @include generateColorClassesForMediumScreens;
+  @include generateTextPropertiesForMediumScreens;
+  @include generateRowForMediumScreens;
+  @include floatMediumSCreens;
+  @include generateBorderClassesForMediumScreens;
 }
 
 @media screen and (min-width: 1024px) {
@@ -36,4 +54,10 @@
   @include generateAlignSelfForLargeScreens;
   @include generateOrderForLargeScreens;
   @include generateWidthAndHeightForLargeScreens;
+  @include generatePositionClassesForLargeScreens;
+  @include generateColorClassesForLargescreens;
+  @include generateTextPropertiesForLargeScreens;
+  @include generateRowForLargeScreens;
+  @include floatLargeSCreens;
+  @include generateBorderClassesForLargeScreens;
 }

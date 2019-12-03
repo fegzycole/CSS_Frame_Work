@@ -1,0 +1,37 @@
+@import './variables';
+
+@mixin generateColorClasses {
+  @for $i from 1 to $colorValuesLength {
+    .bg-#{nth($colorValues, $i)} {
+      background-color: #{nth($colorCodes, $i)};
+    }
+
+    .text-#{nth($colorValues, $i)} {
+      color: #{nth($colorCodes, $i)};
+    }
+  }
+}
+
+@mixin generateColorClassesForMediumScreens {
+  @for $i from 1 to $colorValuesLength {
+    .bg-md-#{nth($colorValues, $i)} {
+      background-color: #{nth($colorCodes, $i)};
+    }
+
+    .text-md-#{nth($colorValues, $i)} {
+      color: #{nth($colorCodes, $i)};
+    }
+  }
+}
+
+@mixin generateColorClassesForLargescreens {
+  @for $i from 1 to $colorValuesLength {
+    .bg-lg-#{nth($colorValues, $i)} {
+      background-color: #{nth($colorCodes, $i)};
+    }
+
+    .text-lg-#{nth($colorValues, $i)} {
+      color: #{nth($colorCodes, $i)};
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import './variables';
+
+@mixin float {
+  @for $i from 1 to $floatValuesLength {
+    .float-#{nth($floatValues, $i)} {
+      float: #{nth($floatValues, $i)};
+    }
+  }
+
+  .clearfix {
+    clear: both;
+  }
+}
+
+@mixin floatMediumSCreens {
+  @for $i from 1 to $floatValuesLength {
+    .float-md-#{nth($floatValues, $i)} {
+      float: #{nth($floatValues, $i)};
+    }
+  }
+
+  .clearfix-md {
+    clear: both;
+  }
+}
+
+@mixin floatLargeSCreens {
+  @for $i from 1 to $floatValuesLength {
+    .float-md-#{nth($floatValues, $i)} {
+      float: #{nth($floatValues, $i)};
+    }
+  }
+
+  .clearfix-lg {
+    clear: both;
+  }
+}

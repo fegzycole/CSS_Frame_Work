@@ -1,0 +1,79 @@
+@import './variables';
+
+@mixin generatePositionClasses {
+  @for $i from 1 to $positionValuesLength {
+    .position-#{nth($positionValues, $i)} {
+      position: #{nth($positionValues, $i)};
+    }
+  }
+
+  @for $i from 0 to $spaceValuesLength {
+    .top-#{$i} {
+      top: #{nth($spaceValues, $i + 1)};
+    }
+
+    .bottom-#{$i} {
+      bottom: #{nth($spaceValues, $i + 1)};
+    }
+
+    .left-#{$i} {
+      left: #{nth($spaceValues, $i + 1)};
+    }
+
+    .right-#{$i} {
+      right: #{nth($spaceValues, $i + 1)};
+    }
+  }
+}
+
+@mixin generatePositionClassesForMediumScreens {
+  @for $i from 1 to $positionValuesLength {
+    .position-md-#{nth($positionValues, $i)} {
+      position: #{nth($positionValues, $i)};
+    }
+  }
+
+  @for $i from 0 to $spaceValuesLength {
+    .top-md-#{$i} {
+      top: #{nth($spaceValues, $i + 1)};
+    }
+
+    .bottom-md-#{$i} {
+      bottom: #{nth($spaceValues, $i + 1)};
+    }
+
+    .left-md-#{$i} {
+      left: #{nth($spaceValues, $i + 1)};
+    }
+
+    .right-md-#{$i} {
+      right: #{nth($spaceValues, $i + 1)};
+    }
+  }
+}
+
+@mixin generatePositionClassesForLargeScreens {
+  @for $i from 1 to $positionValuesLength {
+    .position-lg-#{nth($positionValues, $i)} {
+      position: #{nth($positionValues, $i)};
+    }
+  }
+
+  @for $i from 0 to $spaceValuesLength {
+    .top-lg-#{$i} {
+      top: #{nth($spaceValues, $i + 1)};
+    }
+
+    .bottom-lg-#{$i} {
+      bottom: #{nth($spaceValues, $i + 1)};
+    }
+
+    .left-lg-#{$i} {
+      left: #{nth($spaceValues, $i + 1)};
+    }
+
+    .right-lg-#{$i} {
+      right: #{nth($spaceValues, $i + 1)};
+    }
+  }
+}

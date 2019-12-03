@@ -1,0 +1,48 @@
+@mixin generateRow {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @for $i from 1 to 13 {
+    .col-#{$i} {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+@mixin generateRowForMediumScreens {
+  .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @for $i from 1 to 13 {
+    .col-#{$i} {
+      width: calc((100% / 12) * #{$i});
+    }
+
+    .col-md-#{$i} {
+      width: calc((100% / 12) * #{$i});
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+@mixin generateRowForLargeScreens {
+  .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @for $i from 1 to 13 {
+    .col-lg-#{$i} {
+      width: calc((100% / 12) * #{$i});
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}

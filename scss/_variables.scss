@@ -1,23 +1,51 @@
 // Colors
-$primary-color: #0275d8;
-$success-color: #5cb85c;
-$info-color: #5bc0de;
-$warning-color: #f0ad4e;
-$danger-color: #d9534f;
-$dark-color: #292b2c;
-$light-color: #f7f7f7;
-$white-color: #fff;
-$black-color: #000;
+$primary: #0275d8;
+$success: #5cb85c;
+$info: #5bc0de;
+$warning: #f0ad4e;
+$danger: #d9534f;
+$dark: #292b2c;
+$light: #f7f7f7;
+$white: #fff;
+$black: #000;
 
-$spaceValues: 0.25rem, 0.5rem, 1rem, 1.5rem, 3rem;
+$colorValues: "primary", "success", "info", "warning", "danger", "light",
+  "white", "black";
+$colorCodes: $primary, $success, $info, $warning, $danger, $light,
+  $white, $black;
+$colorValuesLength: 9;
+
+$textProperties: "capitalize", "uppercase", "lowercase";
+$textPropertiesLength: 4;
+
+$font-weights: 100, 200, 300, 400, 500, 600, 700;
+$fontWeightValuesLength: 8;
+
+$spaceValues: 0, 0.25rem, 0.5rem, 1rem, 1.5rem, 3rem;
 $spaceValuesLength: 6;
-$displayValues: 'block', 'inline-block', 'flex', 'none';
+
+$displayValues: "block", "inline-block", "flex", "none";
 $displayValuesLength: 5;
-$justifyContentValues: 'space-between', 'space-around', 'center', 'space-evenly', 'flex-start', 'flex-end';
+
+$justifyContentValues: "space-between", "space-around", "center", "space-evenly",
+  "flex-start", "flex-end";
 $justifyContentValuesLength: 7;
-$alignItemsValues: 'stretch', 'start', 'end', 'center';
+
+$alignItemsValues: "stretch", "start", "end", "center";
 $alignItemsValuesLength: 5;
-$flexDirectionValues: 'row', 'column', 'row-reverse', 'column-reverse';
+
+$flexDirectionValues: "row", "column", "row-reverse", "column-reverse";
 $flexDirectionValuesLength: 5;
+
+$positionValues: "fixed", "absolute", "relative", "static";
+$positionValuesLength: 5;
+
 $widthAndHeightValuesLength: 21;
+
+$floatValues: 'right', 'left', 'none';
+$floatValuesLength: 4;
+
+$borderValues: 'left', 'right', 'top', 'bottom';
+$borderValuesLength: 5;
+
 $cols: 13;
