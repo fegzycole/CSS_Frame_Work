@@ -9,6 +9,10 @@
     border: none;
   }
 
+  .border-round {
+    border-radius: 50%;
+  }
+
   @for $i from 1 to $borderValuesLength {
     .border-#{nth($borderValues, $i)} {
       border-#{nth($borderValues, $i)}: 1px solid #a8a6a6;
@@ -29,6 +33,10 @@
     border: none;
   }
 
+  .border-md-round {
+    border-radius: 50%;
+  }
+
   @for $i from 1 to $borderValuesLength {
     .border-md-#{nth($borderValues, $i)} {
       border-#{nth($borderValues, $i)}: 1px solid #a8a6a6;
@@ -47,6 +55,10 @@
 
   .border-lg-none {
     border: none;
+  }
+
+  .border-lg-round {
+    border-radius: 50%;
   }
 
   @for $i from 1 to $borderValuesLength {
